@@ -1,0 +1,254 @@
+html.is-changing .transition-main {
+  transition: opacity 250ms ease-in-out;
+}
+
+html.is-animating .transition-main {
+  opacity: 0;
+}
+/* Tab Navigation */
+.active-nav-tab {
+    border-left: 2px solid #7a4b29 !important;
+    border-top: 2px solid #7a4b29 !important;
+    border-right: 2px solid #7a4b29 !important;
+    border-radius: 6px 6px 0 0;
+    color: #333;
+    font-weight: 700;
+    padding: 18px 20px 14px;
+    border-block-end: 0 solid #fff;
+    box-shadow: 0 4px 0 -2px #fff;
+}
+
+.nav-tabs {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-bottom: none;
+    padding-top: 10px;
+}
+
+.nav-tabs .tab-container {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-block-end: 2px solid #7a4b29;
+    padding-left: 0px;
+}
+
+.nav-tabs .tab-container li {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 18px 20px 14px;
+}
+
+.nav-tabs .tab-container a {
+    padding-bottom: 10px;
+    padding: 0.6em 0;
+    font-family: Noto Sans, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #7B4C2B;
+}
+
+.nav-tabs .tab-container a:hover {
+    color: #0535d2;
+}
+
+/* sticky interface */
+.sticky-header {
+    position: sticky;
+    top: -220px;
+    z-index: 99;
+}
+
+.sticky-side-nav {
+    position: sticky;
+    top: 89px;
+    height: 91vh;
+    display: block;
+    overflow: auto;
+}
+
+/* side navigation */
+.nav-side-icon {
+    margin-right: 10px;
+}
+
+.nav-side {
+    padding-top: 15px;
+    padding-left: 0;
+    background-color: #fff;
+}
+
+.nav-side ul {
+    padding-left: 0px;
+}
+
+.nav-side ul ul {
+    padding-left: 45px;
+    display: none;
+}
+
+.nav-side ul ul.visible {
+    display: block;
+}
+
+.nav-side button {
+    border: none;
+    padding: 10px 23px;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.nav-side button:focus {
+    background-color: #7a4b29 !important;
+    color: #fff;
+}
+
+.nav-side button:hover {
+    background-color: #f9f6f4;
+}
+
+.nav-side li {
+    list-style: none;
+    font-family: Noto Sans, sans-serif;
+    font-size: 18px;
+}
+
+.nav-side li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333333;
+    border-radius: 4px;
+}
+
+.nav-side li a:not(.btn):visited {
+    color: #333333;
+}
+
+.nav-side .nav-side-item-active a,
+.nav-side .nav-side-item-active a:hover {
+    background-color: #7a4b29;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.nav-side li a:hover {
+    background-color: #f9f6f4;
+    color: #333333;
+}
+
+li.nav-side-chev-up::marker {
+    content: "⏶ ";
+    font-size: 1.2em;
+}
+
+li.nav-side-chev-dwn::marker {
+    content: "⏷ ";
+    font-size: 1.2em;
+}
+
+/* Helpful tips */
+.helpful-tips {
+    z-index: 999;
+    padding: 10px 40px 40px;
+    background: #f2e9e2;
+    border-radius: 4px;
+    position: sticky;
+    top: 0px;
+}
+
+.helpful-tips h2 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.helpful-tips-icon {
+    display: inline-block;
+    width: 80px;
+    margin: -15px -5px 0 -20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.heading-brwn {
+    color: #7a4b29
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    .nav-tabs .tab-container li {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .sticky-header {
+        position: static;
+    }
+
+    .sticky-side-nav {
+        position: static;
+        height: unset;
+    }
+
+    .active-nav-tab {
+        border: 2px solid #7a4b29 !important;
+        border-block-end: none;
+        box-shadow: none;
+    }
+
+    .nav-tabs .tab-container {
+        border-block-end: none;
+        width: 100%;
+    }
+
+    .nav-tabs .tab-container li {
+        display: block;
+        padding: 0px;
+        margin: 5px;
+        border-radius: 6px;
+    }
+
+    .nav-tabs .tab-container a {
+        width: 100%;
+        background-color: #f9f6f4;
+        border-radius: 6px;
+        font-family: Noto Sans, sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: #7B4C2B;
+        display: block;
+        text-align: center;
+        padding: 18px 20px 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+    .sticky-header {
+        top: -245px;
+    }
+
+    .nav-tabs .tab-container li {
+        padding: 18px 14px 14px;
+    }
+
+    .nav-tabs .tab-container a {
+        font-size: 16px;
+    }
+}
+
+/*headings*/
+h2 {
+    font-weight: bold;
+}

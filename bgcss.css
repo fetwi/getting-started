@@ -1,7 +1,7 @@
-html.is-changing .transition-main {
+html.is-changing #main-content {
   transition: opacity 250ms ease-in-out;
 }
-html.is-animating .transition-main {
+html.is-animating #main-content {
   opacity: 0;
 }
 /* Tab Navigation */

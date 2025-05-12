@@ -1,2 +1,2 @@
 Go to
-http://localhost/how-procurement-works/buyer-s-guide/plan-define-the-requirements.html
+http://localhost/getting-started/buyer-s-guide/create-solicitation/importance-of-a-clear-procurement-requirement.html
